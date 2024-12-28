@@ -22,15 +22,15 @@ API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
+USERNAME = environ.get('USERNAME', 'https://telegram.me/abhi_jeet281')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
+DATABASE_NAME = environ.get('DATABASE_NAME', "tnlink")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://drive.google.com/file/d/1ZYLMNexClZO5QM_jBTEYI2hCahG2qd-0/view?usp=drivesdk')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
@@ -38,7 +38,7 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
 URL = environ.get('URL', '')
 
 # verify system vars
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
@@ -63,7 +63,7 @@ SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '8080')
-MAX_BTN = int(environ.get('MAX_BTN', '8'))
+MAX_BTN = int(environ.get('MAX_BTN', '10'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 600))
 IMDB = is_enabled('IMDB', False)
